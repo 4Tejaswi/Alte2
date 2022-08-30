@@ -33,8 +33,10 @@ pipeline {
 						echo 'Print Step 4.2 is In Prallel Test2'
 					}
 				}
-				stage {
-					echo 'Print Step 4.3 final'
+				stage ( 'Print step' ) {
+					steps {
+				        	echo 'Print Step 4.3 final'
+					}
 				}
 			}
 		}
